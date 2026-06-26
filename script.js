@@ -28,6 +28,16 @@ const observer = new IntersectionObserver((entries) => {
 
 fadeEls.forEach(el => observer.observe(el));
 
+// ── FAQ ACCORDION ──
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+    if (!isOpen) item.classList.add('active');
+  });
+});
+
 // ── SMOOTH NAVBAR BACKGROUND ON SCROLL ──
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
