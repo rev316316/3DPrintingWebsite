@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrintCraft 3D | Custom 3D Printing Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">Rev's Sick Ass <span>3D</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Custom 3D Printing</p>
+      <h1>Rev's Sick Ass<br>3D Printing Store</h1>
+      <p class="hero-sub">
+        For nerds with big PPS. Custom parts, fast turnaround, no boring stuff.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+        <a href="#services" class="btn btn-outline">See What We Offer</a>
+      </div>
+    </div>
+    <div class="hero-bg-shape"></div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="cube-wrapper" aria-hidden="true">
+          <div class="cube">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-label">Our Story</span>
+        <h2>Just a Nerd Who Likes 3D Printing Bullshit</h2>
+        <p>
+          No corporate nonsense. No fancy showroom. Just someone who got
+          obsessed with 3D printing and never stopped.
+        </p>
+        <p>
+          If you need something printed, I'll print it. Fast, accurate,
+          and without charging you an arm and a leg for it.
+        </p>
+        <ul class="about-stats">
+          <li><strong>500+</strong> parts printed</li>
+          <li><strong>48hr</strong> typical turnaround</li>
+          <li><strong>5★</strong> avg. customer rating</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ── -->
+  <section class="services section" id="services">
+    <div class="container">
+      <span class="section-label">What We Offer</span>
+      <h2>Services Built for Your Project</h2>
+      <div class="services-grid">
+        <div class="card">
+          <div class="card-icon">&#9679;</div>
+          <h3>Miniatures</h3>
+          <p>D&D minis, wargaming pieces, collectibles — printed with high detail so they actually look sick on the table.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#9632;</div>
+          <h3>Custom Designs</h3>
+          <p>Got an idea, sketch, or STL file? Send it over and I'll bring it to life. No idea is too weird.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#9650;</div>
+          <h3>Props & Cosplay</h3>
+          <p>Helmets, weapons, armor pieces, replicas — whatever you need for your build, printed to fit and ready to paint.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#9670;</div>
+          <h3>Everyday Items</h3>
+          <p>Phone stands, cable organizers, mounts, hooks, replacement parts — useful stuff that actually solves real problems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact section" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-text">
+        <span class="section-label">Get in Touch</span>
+        <h2>Ready to Start Your Project?</h2>
+        <p>Fill out the form and we'll get back to you with a quote within one business day.</p>
+        <p class="contact-email">Or email us directly: <a href="mailto:hello@printcraft3d.com">hello@printcraft3d.com</a></p>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Tell Us About Your Project</label>
+          <textarea id="message" name="message" rows="5" placeholder="Material, dimensions, quantity, deadline..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo">Rev's Sick Ass <span>3D</span></a>
+      <p>&copy; 2026 PrintCraft 3D. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
