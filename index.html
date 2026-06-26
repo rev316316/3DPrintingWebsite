@@ -12,11 +12,14 @@
   <nav class="navbar">
     <div class="container nav-inner">
       <a href="#" class="logo">Rev's Sick Ass <span>3D</span></a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-close">About</a></li>
+        <li><a href="#services" class="nav-close">Services</a></li>
+        <li><a href="#contact" class="nav-close">Contact</a></li>
       </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
@@ -51,7 +54,7 @@
           </div>
         </div>
       </div>
-      <div class="about-text">
+      <div class="about-text fade-up">
         <span class="section-label">Our Story</span>
         <h2>Just a Nerd Who Likes 3D Printing Bullshit</h2>
         <p>
@@ -77,22 +80,22 @@
       <span class="section-label">What We Offer</span>
       <h2>Services Built for Your Project</h2>
       <div class="services-grid">
-        <div class="card">
+        <div class="card fade-up">
           <div class="card-icon">&#9679;</div>
           <h3>Miniatures</h3>
           <p>D&D minis, wargaming pieces, collectibles — printed with high detail so they actually look sick on the table.</p>
         </div>
-        <div class="card">
+        <div class="card fade-up">
           <div class="card-icon">&#9632;</div>
           <h3>Custom Designs</h3>
           <p>Got an idea, sketch, or STL file? Send it over and I'll bring it to life. No idea is too weird.</p>
         </div>
-        <div class="card">
+        <div class="card fade-up">
           <div class="card-icon">&#9650;</div>
           <h3>Props & Cosplay</h3>
           <p>Helmets, weapons, armor pieces, replicas — whatever you need for your build, printed to fit and ready to paint.</p>
         </div>
-        <div class="card">
+        <div class="card fade-up">
           <div class="card-icon">&#9670;</div>
           <h3>Everyday Items</h3>
           <p>Phone stands, cable organizers, mounts, hooks, replacement parts — useful stuff that actually solves real problems.</p>
